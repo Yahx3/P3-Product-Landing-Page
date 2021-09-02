@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Product Landing Page</title>
+</head>
+<body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<header id="header">
+    <nav id="nav-bar">
+        <a href="https://www.sony.com/" class="logo"><img id="header-img" class="logo" src="SonyLogo.png" alt="Sony company logo"></a>
+        <div class="navLinks">
+            <a href="#video" class="nav-link">Video Showcase</a>
+            <a href="#spec" class="nav-link">Specs</a>
+            <a href="#preorder" class="nav-link">Pre-Orders</a>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="hero">
+        <h1 class="title">Sony WH-1000XM4</h1>
+        <div class="heroImageContainer">
+            <img class="heroImage" src="Sony_maleModelWorking.webp" alt="Male model working in busy cafe wearing noise cancelling headphones">
+        </div>
+    </div>
+    <div class="intro">
+        <div class="flexIntro">
+        <h2 class="h2Intro">World Class Noise Canceling Headphones</h2>
+        <p class="pIntro">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat ipsum in purus lacinia lacinia. Sed nec massa lorem. Aliquam ac vestibulum ex, nec iaculis tellus. Integer sapien neque, faucibus eu finibus eget, venenatis ut leo. Duis risus risus, posuere nec nunc eget, feugiat rhoncus ipsum. Cras bibendum facilisis tortor vel cursus. Etiam at enim consequat, facilisis mauris at, varius augue. Suspendisse potenti. Phasellus laoreet ornare nunc id mattis. Donec laoreet malesuada est eget faucibus.
+        </br></br>
+            Phasellus ultrices odio fermentum fermentum laoreet. Vestibulum metus nunc, vulputate nec tristique non, egestas vel sem. Aliquam erat volutpat. Maecenas tempus consectetur leo et varius. Maecenas et massa nunc. Aliquam posuere lacus eu dignissim tincidunt. Vivamus non tellus nisl.
+        </p>
+        </div>
+        <img class="imageRight" src="Sony_femaleModelWalkingCity.webp" alt="Female model in loud city with noise cancelling on">
+    </div>
+    <div class="video embedResponsive embedResponsive16x9">
+        <iframe id="video" class="videoiFrame" width="560" height="315" src="https://www.youtube-nocookie.com/embed/vuoxprrEwbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div id="spec">
+        <h2>General Features</h2>
+        <div class="generalFeatures">
+            <div class="generalFeatures-1">
+                <p class="specHeading"><strong>Headphone Type</strong></p>
+                    <p class="specDetail">Closed, dynamic</p>
+                <p class="specHeading"><strong>Driver Unit</strong></p>
+                    <p class="specDetail">40mm, dome type (CCAW Voice coil)</p>
+                <p class="specHeading"><strong>Magnet</strong></p>
+                    <p class="specDetail">Neodymium</p>
+                <p class="specHeading"><strong>Diaphragm</strong></p>
+                    <p class="specDetail">Aluminum coated LCP</p>
+                <p class="specHeading"><strong>Frequency Response</strong></p>
+                    <p class="specDetail">4Hz-40,000Hz</p>
+                    <p class="specHeading"><strong>Frequency Response (Active Operation)</strong></p>
+                    <p class="specDetail">4Hz-40,000Hz</p>
+            </div>
+            <div class="generalFeatures-2">
+                <p class="specHeading"><strong>Frequency Response(Bluetooth® Communication)</strong></p>
+                    <p class="specDetail">20Hz - 20,000Hz (44.1kHz Sampling) / 20Hz - 40,000Hz (LDAC 96kHz Sampling, 990kbps)</p>
+                    <p class="specHeading"><strong>Sensitivities (dB/mW)</strong></p>
+                    <p class="specDetail">105dB / mW (1kHz) (when connecting via the headphone cable with the unit turned on) , 101dB / mW (1kHz) (when connecting via the headphone cable with the unit turned off)</p>
+            </div>
+            <div class="generalFeatures-3">
+                <p class="specHeading"><strong>Cord Type</strong></p>
+                    <p class="specDetail">Single-sided (detachable)</p>
+                <p class="specHeading"><strong>Cord Length</strong></p>
+                    <p class="specDetail">Headphone cable (approx. 1.2m, OFC strands, gold-plated stereo mini plug)</p>
+                    <p class="specHeading"><strong>Plug</strong></p>
+                    <p class="specDetail">Gold-plated L-shaped stereo mini plug</p>
+                    <p class="specHeading"><strong>Wearing Style</strong></p>
+                    <p class="specDetail">Circumaural</p>
+                    <p class="specHeading"><strong>NFC</strong></p>
+                    <p class="specDetail">Yes</p>
+                    <p class="specHeading"><strong>DSEE Extreme</strong></p>
+                    <p class="specDetail">Yes</p>
+                    <p class="specHeading"><strong>Passive Operation</strong></p>
+                    <p class="specDetail">Yes</p>
+            </div>
+            <div class="generalFeatures-4">
+            </div>
+        </div>
+        <p class="disclaimer">For more detailed specifications, visit the sony official website, <a href="https://www.sony.com/et/electronics/headband-headphones/wh-1000xm4/specifications">here</a>.</p>
+    </div>
+    <div id="preorder">
+        <h2>Pre-order Here!</h2>
+        <p>Be the first to know about release dates and when pre-ordering opens!<br>Sign up below.</p>
+        <p class="disclaimer">[Note: Email provided will be given to freecodecamp.com, and this DOES NOT sign you up for anything related to Sony.]</p>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input type="email" class="userEmail" id="email" name="email" placeholder="Enter your email to sign up!" required></input>
+            <input type="submit" id="submit" value="Sign Up">
+        </form>
+    </div>
+</main>
+<footer>
+    <div class="disclaimer--container">
+        <p class="disclaimerHeading"><strong>Disclaimer</strong></p>
+        <p class="disclaimer">All information on this website may be <b>false or misleading</b>. This website was created as a learning piece and shares no connection with the Sony brand or its products. Please visit the official Sony website for accurate and honest information.</p>
+    </div>
+</footer>
+</body>
+</html>

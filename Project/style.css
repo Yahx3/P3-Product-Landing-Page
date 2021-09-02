@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 1.6rem;
+    padding: 0;
+    padding-top: 5rem;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+h1 {
+    padding-bottom: 2rem;
+    font-size: 4.5rem;
+}
+
+h2 {
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 1366px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* remove for responsive */
+}
+
+/* NAV BAR */
+header {
+    position: fixed;
+    box-sizing: content-box;
+    top: 0;
+    margin: auto;
+    width: 100%;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 1366px;
+    height: 5rem;
+    margin: 0 auto;
+}
+
+    a.logo {
+        align-self: center;
+        padding: 1rem;
+    }
+
+        img.logo {
+            height: 2rem;
+        }
+
+    .navLinks {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .nav-link {
+        align-self: center;
+        padding: 0rem 1rem;
+        text-decoration: none;
+        color: #000000;
+    }
+
+/* HERO BOX */
+.title {
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.heroImageContainer {
+    display: grid;
+    place-items: center;
+}
+
+.heroImage {
+    box-sizing: border-box;
+    padding: 0.5rem 0 3rem 0;
+    max-width: 100%;
+    max-height: 90rem;
+}
+
+/* INTRO */
+.intro {
+    display: flex;
+    margin: 13rem 0;
+}
+
+    .flexIntro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h2Intro {
+        padding: 0 0.6rem 2rem;
+    }
+
+    .pIntro {
+        padding: 0 7rem 0 0.6rem;
+        text-align: justify;
+        line-height: 125%;
+    }
+
+    .imageRight {
+        align-self: center;
+        width: 37rem;
+    }
+
+/* PRODUCT VIDEO  */
+.video {
+    margin: 13rem 0;
+}
+
+.embedResponsive {
+    position: relative;
+    /* to help with the child element positions */
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.embedResponsive::before {
+    content: "";
+    display: block;
+    /* WHY CREATE AN EMPTY BLOCK BEFORE?? */
+}
+
+.embedResponsive16x9::before {
+    padding-top: calc(9/16 * 100%);
+}
+    
+    .videoiFrame {
+        position: absolute;
+        z-index: -10;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+/* SPECIFICATIONS */
+#spec {
+    display: grid;
+    place-items: center;
+    margin: 13rem 0;
+}
+
+    .generalFeatures {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: baseline;
+        height: 50rem;
+        width: 80rem;
+    }
+        .specHeading {
+            font-size: 1.8rem;
+            line-height: 150%;
+        }
+        
+        .specDetail {
+            font-size: 1.6rem;
+            line-height: 150%;
+            margin-bottom: 0.8rem;
+            overflow-wrap: break-word;
+        }
+        
+        .generalFeatures-1, .generalFeatures-2, .generalFeatures-3, .generalFeatures-4 {
+            max-width: 30%;
+            padding: 0 1.6667%;
+        }
+
+/* PREORDERS */
+#preorder {
+    margin: 13rem auto 30rem;
+    text-align: center;
+}
+
+    #preorder > p {
+        margin-bottom: 1rem;
+        line-height: 150%;
+    }
+
+/* FOOTER DISCLAIMER */
+footer {
+    width: 100%;
+    color: #898991;
+    background-color: #1f2024;
+}
+
+.disclaimer--container {
+    box-sizing: border-box;
+    max-width: 1366px;
+    padding: 2rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+    .disclaimerHeading {
+        font-size: 1.2rem;
+        padding-right: 2rem;
+    }
+
+    .disclaimer {
+        font-size: 1rem;
+    }
+
+
+
+@media (max-width: 500px) {
+    header {
+        position: static;
+    }
+    
+    #nav-bar {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+
+}
