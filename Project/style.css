@@ -26,6 +26,7 @@ h2 {
     font-size: 2.5rem;
 }
 
+
 main {
     max-width: 1366px;
     margin: 0 auto;
@@ -125,23 +126,20 @@ header {
     margin: 13rem 0;
 }
 
-.embedResponsive {
-    position: relative;
-    /* to help with the child element positions */
-    display: block;
-    width: 100%;
-    overflow: hidden;
-}
-
-.embedResponsive::before {
-    content: "";
-    display: block;
-    /* WHY CREATE AN EMPTY BLOCK BEFORE?? */
-}
-
-.embedResponsive16x9::before {
-    padding-top: calc(9/16 * 100%);
-}
+    .embedResponsive16x9 {
+        position: relative;
+        /* to help with the child element positions */
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .embedResponsive16x9::before {
+        /* WHY CREATE AN EMPTY BLOCK BEFORE?? */
+        content: "";
+        display: block;
+        padding-top: calc(9/16 * 100%);
+    }
     
     .videoiFrame {
         position: absolute;
@@ -168,6 +166,12 @@ header {
         height: 50rem;
         width: 80rem;
     }
+        
+        .generalFeatures-1, .generalFeatures-2, .generalFeatures-3, .generalFeatures-4 {
+            max-width: 30%;
+            padding: 0 1.6667%;
+        }
+
         .specHeading {
             font-size: 1.8rem;
             line-height: 150%;
@@ -178,11 +182,6 @@ header {
             line-height: 150%;
             margin-bottom: 0.8rem;
             overflow-wrap: break-word;
-        }
-        
-        .generalFeatures-1, .generalFeatures-2, .generalFeatures-3, .generalFeatures-4 {
-            max-width: 30%;
-            padding: 0 1.6667%;
         }
 
 /* PREORDERS */
@@ -225,16 +224,102 @@ footer {
 
 
 
-@media (max-width: 500px) {
+@media screen and (max-width: 800px) {
+    body {
+        padding: 0;
+    }
+    
+    h1 {
+        padding: 0;
+        font-size: 3rem;
+    }
+    
+    h2 {
+        padding: 0;
+        font-size: 2rem;
+    }
+
     header {
         position: static;
     }
     
     #nav-bar {
-        display: flex;
         flex-direction: column;
+        justify-content: center;
         height: auto;
+        padding: 0.5rem 0;
     }
 
+    /* Hero */
+    .hero {
+        margin: 5rem 0;
+    }
 
+    .heroImageContainer {
+        overflow: hidden;
+    }
+
+    .heroImage {
+        max-width: 90%;
+        min-width: 40rem;
+        margin-right: 10%;
+    }
+
+    /* Intro */
+    .intro {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+        margin: 10rem 0;
+        text-align: center;
+        overflow: hidden;
+    }
+
+        .flexIntro {
+            display: block;
+        }
+
+        .pIntro {
+            padding: 1rem 0;
+            margin-inline: auto;
+            text-align: center;
+            max-width: 95%;
+        }
+
+        .imageRight {
+            width: 120%;
+        }
+    /* Product Video - this is what a properly adapted responsive container looks like... */
+    .video {
+        margin: 10rem 0;
+    }
+
+    /* Specifications */
+    #spec {
+        display: flex;
+        flex-flow: column;
+        margin: 10rem 0;
+    }
+        .generalFeatures {
+            flex-flow: column;
+            align-content: flex-start;
+            margin: 3rem 0 1.5rem;
+            width: 100%;
+            height: auto;
+        }
+
+            .generalFeatures-1, .generalFeatures-2, .generalFeatures-3, .generalFeatures-4 {
+                margin-inline: auto;
+                max-width: 95%;
+                padding: 0;
+            }
+
+            .specHeading {
+                font-size: 1.6rem;
+            }
+
+    /* Preorders */
+    #preorder h2 {
+        padding-bottom: 2rem;
+    }
 }
