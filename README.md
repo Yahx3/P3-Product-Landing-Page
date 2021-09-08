@@ -1,14 +1,12 @@
 This is my third webpage. It's created as part of the freecodecamp curriculum.
-View my [final project on codepen](https://codepen.io/yahx/full/), or using the files in this repo.
+View my [final project on codepen](https://codepen.io/yahx/full/XWgppzz), or using the files in this repo.
 
-Due to time goals, the following improvements are not implemented:
-- A mobile first design approach
-- Fallback support for different browsers
+Note that image may fail to load on CodePen. A proper build can be found using the file on this repo.
 
-Note that in the codepen link, the background image may fail to load. This issue is unique to codepen. For that reason, it is recommended to manually load the html using this repo.
 
 
 Below are the project requirements:
+
 # Responsive Web Design Projects - Build a Product Landing Page
 
 **Objective**: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/RKRbwL.
